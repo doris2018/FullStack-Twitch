@@ -1,4 +1,4 @@
-# fullStack-Twitch
+# Fullstack-Twitch
 A Twitch Resources Recommendation Website
 
 
