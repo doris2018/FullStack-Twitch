@@ -17,7 +17,8 @@ This web application is built to help users search twitch resources(stream/video
 •	On the recommend for you page, the application will list the resources based on your previously favorited items.
 
 
-🪄Built With
+
+🛠Built With
 
 •	Back-end implemented RESTful APIs based on Java servlets, stored data in MySQL and depoloyed it to Amazon RDS.
 
