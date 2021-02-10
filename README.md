@@ -7,9 +7,13 @@ A Twitch Resources Recommendation Website
 This web application is built to help users search twitch resources(stream/video/clip) and get recommendations.
 
 
+
+
 ❤️ Final Website
 
 http://18.220.47.115/
+
+
 
 
 🚀 Fuctionality
@@ -22,6 +26,8 @@ http://18.220.47.115/
 
 
 
+
+
 🛠Built With
 
 •	Back-end implemented RESTful APIs based on Java servlets, stored data in MySQL and depoloyed it to Amazon RDS.
@@ -29,6 +35,8 @@ http://18.220.47.115/
 •	Front-end was built with React/Ant Design/HTML/CSS/JavaScript.
 
 •	Containerized application using Docker and deployed the service to AWS EC2.
+
+
 
 
 
