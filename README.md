@@ -8,7 +8,9 @@ This web application is built to help users search twitch resources(stream/video
 
 
 ❤️ Final Website
+
 http://18.220.47.115/
+
 
 🚀 Fuctionality
 
