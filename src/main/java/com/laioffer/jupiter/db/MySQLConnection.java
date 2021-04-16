@@ -20,7 +20,7 @@ import com.laioffer.jupiter.entity.User;
 
 public class MySQLConnection {
     private final Connection conn;
-
+//构造函数！！建立object时就会执行。
     public MySQLConnection() throws MySQLException {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
