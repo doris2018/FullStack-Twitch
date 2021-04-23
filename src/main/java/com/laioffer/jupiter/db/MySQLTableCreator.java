@@ -12,6 +12,8 @@ public class MySQLTableCreator {
 
             // Step 1 Connect to MySQL. 这个过程非常固定，跟数据库链接都是这个过程！！
             System.out.println("Connecting to " + MySQLDBUtil.getMySQLAddress());
+            //这句的功能是为了考虑一些Connor case，这个library有瑕疵！
+            // 官方解释：The newInstance() call is a work around for som broken Java implementations.
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(MySQLDBUtil.getMySQLAddress());
 
