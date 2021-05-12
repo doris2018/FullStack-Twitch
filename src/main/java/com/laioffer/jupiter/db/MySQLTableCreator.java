@@ -4,16 +4,16 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-//这个class不要轻易运行，一般只用一次，因为它是 reset the database. 里面有drop已存在的过程
+
 public class MySQLTableCreator {
-    // Run this as a Java application to reset the database.    // 自带了main函数，可以不依赖于Tomcat来启动
+    // Run this as a Java application to reset the database.   
     public static void main(String[] args) {
         try {
 
-            // Step 1 Connect to MySQL. 这个过程非常固定，跟数据库链接都是这个过程！！
+            // Step 1 Connect to MySQL. 
             System.out.println("Connecting to " + MySQLDBUtil.getMySQLAddress());
-            //这句的功能是为了考虑一些Connor case，这个library有瑕疵！
-            // 官方解释：The newInstance() call is a work around for som broken Java implementations.
+           
+            //The newInstance() call is a work around for som broken Java implementations.
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(MySQLDBUtil.getMySQLAddress());
 
