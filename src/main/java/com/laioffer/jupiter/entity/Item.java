@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonDeserialize(builder = Item.Builder.class)
+@JsonDeserialize(builder = Item.Builder.class) //java -> json
 
 public class Item {
     @JsonProperty("id")
