@@ -14,6 +14,7 @@ public class User {
 
     @JsonProperty("password")
     private String password;
+    //only password is not as it needs to be processed later.
 
     @JsonProperty("first_name")
     private final String firstName;
