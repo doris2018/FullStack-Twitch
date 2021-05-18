@@ -117,6 +117,7 @@ public class TwitchClient {
         ObjectMapper mapper = new ObjectMapper();
         try {
             return Arrays.asList(mapper.readValue(data, Item[].class));
+            //return ArrayList
         } catch (JsonProcessingException e) {
             e.printStackTrace();
             throw new TwitchException("Failed to parse item data from Twitch API");
