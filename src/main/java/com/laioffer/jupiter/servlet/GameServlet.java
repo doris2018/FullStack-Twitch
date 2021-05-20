@@ -22,6 +22,7 @@ public class GameServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String gameName = request.getParameter("game_name");
+        //this gameName might be null
         TwitchClient client = new TwitchClient();
 
         response.setContentType("application/json;charset=UTF-8");
