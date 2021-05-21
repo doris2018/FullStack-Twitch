@@ -22,7 +22,7 @@ public class LoginServlet extends HttpServlet {
 //        LoginRequestBody body = mapper.readValue(request.getReader(), LoginRequestBody.class);
         LoginRequestBody body = ServletUtil.readRequestBody(LoginRequestBody.class, request);
         if (body == null) {
-            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);//return 400
             return;
         }
 
