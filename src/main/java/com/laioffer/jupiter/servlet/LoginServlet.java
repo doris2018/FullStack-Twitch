@@ -40,6 +40,7 @@ public class LoginServlet extends HttpServlet {
         }
 
         if (!username.isEmpty()) {
+            //create a new session or return the existing session
             HttpSession session = request.getSession();
             session.setAttribute("user_id", body.getUserId());
             session.setMaxInactiveInterval(600);
