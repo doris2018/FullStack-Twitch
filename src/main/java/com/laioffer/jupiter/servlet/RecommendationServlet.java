@@ -24,6 +24,9 @@ public class RecommendationServlet extends HttpServlet {
         HttpSession session = request.getSession(false);
         ItemRecommender itemRecommender = new ItemRecommender();
         Map<String, List<Item>> itemMap;
+        // If the user is successfully logged in, recommend by the favorite records,
+        // otherwise recommend by the top games.
+        
         try {
             if (session == null) {
                 itemMap = itemRecommender.recommendItemsByDefault();
