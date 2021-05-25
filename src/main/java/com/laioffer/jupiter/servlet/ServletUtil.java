@@ -22,7 +22,7 @@ public class ServletUtil {
         return DigestUtils.md5Hex(userId + DigestUtils.md5Hex(password)).toLowerCase();
     }
 
-
+//add a static function readRequestBody to ServletUtil to deserialize JSON data from the request body.
     public static <T> T readRequestBody(Class<T> cl, HttpServletRequest request) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         try {
