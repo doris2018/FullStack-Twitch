@@ -36,6 +36,7 @@ public class RegisterServlet extends HttpServlet {
             connection.close();
         }
 
+        //if the user is already added, return SC_CONFLICT == 409
         if (!isUserAdded) {
             response.setStatus(HttpServletResponse.SC_CONFLICT);
         }
