@@ -12,6 +12,7 @@ import java.io.IOException;
 public class LogoutServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //if the session does not exist, it will not create a new session
         HttpSession session = request.getSession(false);
         if (session != null) {
             session.invalidate(); // destroy session
