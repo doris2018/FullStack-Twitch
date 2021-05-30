@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
             //create a new session or return the existing session
             HttpSession session = request.getSession();
             session.setAttribute("user_id", body.getUserId());
-            session.setMaxInactiveInterval(600);
+            session.setMaxInactiveInterval(600);// set up the expiration time(/s)
 
             LoginResponseBody loginResponseBody = new LoginResponseBody(body.getUserId(), username);
             response.setContentType("application/json;charset=UTF-8");
