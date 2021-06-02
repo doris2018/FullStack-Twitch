@@ -87,6 +87,7 @@ public class FavoriteServlet extends HttpServlet {
         Map<String, List<Item>> itemMap;
         MySQLConnection connection = null;
         try {
+            //Read the favorite items from the database
             connection = new MySQLConnection();
             itemMap = connection.getFavoriteItems(userId);
             ServletUtil.writeItemMap(response, itemMap);
