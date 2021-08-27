@@ -1,5 +1,5 @@
 # Fullstack-Twitch
-A Twitch Resources Recommendation Website
+A Twitch Resources Recommendation Website 
 
 
 👩‍💻 Motivation
