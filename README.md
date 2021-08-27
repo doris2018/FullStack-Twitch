@@ -12,7 +12,7 @@ This web application is built to help users search twitch resources(stream/video
 
 
 
-🚀 Fuctionality
+🚀 Functionality
 
 •	On the home page, users can either register as a new user or log into an existing account.
 
