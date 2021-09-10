@@ -15,7 +15,6 @@ import java.io.IOException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.laioffer.jupiter.entity.Game;
-
 import java.util.*;
 
 
@@ -176,7 +175,6 @@ public class TwitchClient {
         for (ItemType type : ItemType.values()) {
             itemMap.put(type.toString(), searchByType(gameId, type, DEFAULT_SEARCH_LIMIT));
         }
-
         return itemMap;
     }
 
