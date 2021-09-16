@@ -9,7 +9,6 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import com.laioffer.jupiter.db.MySQLConnection;
 import com.laioffer.jupiter.db.MySQLException;
-
 import java.util.*;
 
 public class ItemRecommender {
