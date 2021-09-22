@@ -18,6 +18,7 @@ import com.laioffer.jupiter.entity.ItemType;
 import com.laioffer.jupiter.entity.User;
 
 public class MySQLConnection {
+    
     private final Connection conn;
 
     public MySQLConnection() throws MySQLException {
